@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body {
+    background-color: var(--light-Grayish-Blue);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 50%;
+    height: 60%;
+    background-color: #ffff;
+    border-radius: 0.5rem;
+    display: flex;
+    overflow: hidden;
+}
+
+.card_left {
+    display: flex;
+    width: 40%;
+}
+
+.card_image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_right {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 35px;
+    line-height: 1.8rem;
+    gap: 1rem;
+}
+
+.card_right h2 {
+    font-size: 1.4rem;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: bold;
+}
+
+.card_right p {
+    color: var(--Desaturated-Dark-Blue);
+    font-weight: 400;
+}
+
+.card_info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+}
+
+.card_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_avatar {
+    width: 11%;
+    height: 11%;
+    border-radius: 50%;
+}
+
+.card_name h3 {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 15px;
+}
+
+.card_name p {
+    font-size: 13px;
+}
+
+.card_share {
+    display: flex;
+    width: 2.6rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--light-Grayish-Blue);
+    object-fit: cover;
+    padding: 12px;
+    position: absolute;
+    right: 10px;
+}
+
+@media only screen and (max-width:600px) {
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .card_left {
+        width: 100%;
+        height: 30%;
+    }
+
+    .card_right {
+        width: 100%;
+        height: 70%;
+    }
+
+}
