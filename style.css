@@ -30,7 +30,7 @@ body {
     background-color: #ffff;
     border-radius: 0.5rem;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .card_left {
@@ -93,16 +93,49 @@ body {
     font-size: 13px;
 }
 
-.card_share {
+#card_btn {
     display: flex;
     width: 2.6rem;
     height: 2.5rem;
     border-radius: 50%;
-    background-color: var(--light-Grayish-Blue);
+    border: #ffff; 
     object-fit: cover;
     padding: 12px;
     position: absolute;
     right: 10px;
+}
+
+#card_share{
+    display: none;
+    position: absolute;
+    bottom: 80px;  
+    left: 250px;
+    background-color: var(--Very-Dark-Grayish-Blue); 
+    padding: 15px 30px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 15px; 
+}
+#card_share p{
+font-size: 15px;
+letter-spacing: 0.5rem;
+color: var(--Grayish-Blue);
+}
+#card_share img{
+width: 22px;
+height: 22px;
+fill: white;
+}
+.show {
+    display: flex !important;
+    
+}
+.button_show{
+    background-color: var(--Very-Dark-Grayish-Blue);
+    
+}
+.button_show img {
+    fill: white;
 }
 
 @media only screen and (max-width:600px) {
